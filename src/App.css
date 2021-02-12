@@ -51,14 +51,13 @@
 .column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  flex: 1 1 300px;
 }
 
 .column-1 {
-  height: 50vh;
+  min-height: 200px;
 }
 
 .column-2 {
-  height: 50vh;
+  min-height: 200px;
 }
