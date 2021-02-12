@@ -56,8 +56,28 @@
 
 .column-1 {
   min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
 }
 
 .column-2 {
   min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.footer {
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

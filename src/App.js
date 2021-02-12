@@ -28,18 +28,22 @@ function App() {
           <div className="row">
             <div className="column">
               <div className="column-1">
-                Column 1
+                <div className="column-item">Column 1</div>
+                <div className="column-item">Column 1</div>
+                <div className="column-item">Column 1</div>
               </div>
             </div>
             <div className="column">
               <div className="column-2">
-                Column 2
+                <div className="column-item">Column 2</div>
+                <div className="column-item">Column 2</div>
+                <div className="column-item">Column 2</div>
               </div>
             </div>
           </div>
         </div>
         <div className="footer">
-          Footer
+          <div>Footer</div>
         </div>
       </div>
     </div>
