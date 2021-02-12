@@ -23,6 +23,11 @@
   align-items: center;
 }
 
+.main-body {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-1 {
   display: flex;
   flex-direction: row;
@@ -30,15 +35,10 @@
   align-items: center;
 }
 
-.header-2 {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
-
-.main-body {
-  display: flex;
-  flex-direction: column;
 }
 
 .row {
