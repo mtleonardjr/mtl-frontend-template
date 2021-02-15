@@ -7,7 +7,7 @@ const Columns = () => {
 
   return (
     <div className="row">
-      {showSearch === false && (<Search />)}
+      {showSearch === false && (<Search onAdd={() => setShowSearch(!showSearch)}/>)}
       {showSearch === true && <CollapsedCard onAdd={() => setShowSearch(!showSearch)}/>}
       <div className="column">
         <form className="card">

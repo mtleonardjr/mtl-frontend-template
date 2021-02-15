@@ -13,6 +13,7 @@ import Columns from './components/Columns'
 import Footer from './components/Footer'
 import About from './components/About'
 
+
 function App() {
   const [showSearch, setShowSearch] = useState(false)
 
@@ -25,17 +26,12 @@ function App() {
         <Banner />
         <Header />
         <Navbar />
-        <div className="app">
           <div className="main-body">
-
-
             <Switch>
               <Route exact path='/'><Columns /></Route>
               <Route path='/about'><About /></Route>
             </Switch>
           </div>
-
-        </div>
         <Footer />
       </div>
     </Router>

@@ -1,9 +1,9 @@
-const Search = () => {
+const Search = ({ onAdd }) => {
     return (
-        <div className="column-search">
-        <form className="card-search">
+        <div className="column">
+        <form className="card">
           <div className='delete' >
-            <button>x</button>
+            <button onClick={onAdd}>x</button>
           </div>
           <label className='card-label'>Search Label</label>
           <input type='text' className='text-input'></input>

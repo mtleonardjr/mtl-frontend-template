@@ -9,9 +9,6 @@ const Navbar = () => {
         <div>
           <Link to='/about'>About</Link>
         </div>
-        <div>
-          Navbar
-        </div>
       </div>
     )
   } 

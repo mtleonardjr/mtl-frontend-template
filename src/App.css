@@ -6,15 +6,8 @@
 .app-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   height: 95vh;
-  border: 2px solid black;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
   border: 2px solid black;
 }
 
@@ -25,14 +18,6 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(48, 48, 48);
-}
-
-.main-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
 }
 
 .header {
@@ -52,6 +37,15 @@
   width: 100%;
 }
 
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -69,20 +63,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  flex: 1 1;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  flex: 1 0 100%;
-}
-
-.column-search {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  flex: 0 1 100%;
 }
 
 .delete {
@@ -92,18 +78,27 @@
   background-color: inherit;
 }
 
-.text-input {
-  background-color: white;
+.expand {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1;
+  background-color: inherit;
 }
 
-.card-search {
+.label-collapsed {
+  font-size: x-large;
+  background-color: inherit;
+}
+
+.label-collapsed-invs {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   flex: 1;
-  padding: 2px 10px;
-  margin: 2px 10px;
-  background-color: gray;
+  background-color: inherit;
+}
+
+.text-input {
+  background-color: white;
 }
 
 .card {
@@ -114,20 +109,25 @@
   padding: 2px 10px;
   margin: 2px 10px;
   background-color: gray;
-  min-width: 200px;
-  min-height: 100px;
+}
+
+.card-collapsed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2px 10px;
+  margin: 2px 10px;
+  background-color: gray;
 }
 
 .card-records {
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
-  margin: 10px;
   background-color: gray;
-  max-height: 300px;
   overflow: auto;
   padding: 2px 10px;
   margin: 2px 10px;
+  max-height: 300px;
 }
 
 .card-label {

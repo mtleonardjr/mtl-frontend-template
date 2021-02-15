@@ -1,11 +1,14 @@
 const CollapsedComponent = ({ onAdd }) => {
     return (
         <div className="column">
-        <div className="card">
-          <div className='delete' >
+        <div className="card-collapsed">
+          <div className='label-collapsed-invs'></div>
+          <label className='label-collapsed'>CollapsedComponent Label</label>
+
+          <div className='expand' >
             <button onClick={onAdd}>x</button>
           </div>
-          <label className='card-label'>CollapsedComponent Label</label>
+          
         </div>
       </div>
     )
