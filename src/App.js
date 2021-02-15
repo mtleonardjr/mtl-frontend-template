@@ -17,10 +17,12 @@ function App() {
     <Router>
       <div className='app-container'>
         <Banner />
+        <Header />
+        <Navbar />
         <div className="app">
           <div className="main-body">
-            <Header />
-            <Navbar />
+
+
             <Switch>
               <Route exact path='/'><Columns /></Route>
               <Route path='/about'><About /></Route>

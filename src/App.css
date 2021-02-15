@@ -13,9 +13,8 @@
 .app {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  flex: 2;
+  flex: 1;
   border: 2px solid black;
 }
 
@@ -31,7 +30,8 @@
 .main-body {
   display: flex;
   flex-direction: column;
-  flex: 1 1;
+  flex: 1;
+  min-width: 300px;
 }
 
 .header {
@@ -40,6 +40,7 @@
   justify-content: center;
   align-items: center;
   background-color: gray;
+  width: 100%;
 }
 
 .navbar {
@@ -47,14 +48,13 @@
   flex-direction: row;
   justify-content: flex-end;
   background-color: gray;
+  width: 100%;
 }
 
 .about-container {
-  min-height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+
   padding: 20px;
   flex: 1;
 }
@@ -81,7 +81,7 @@
 .column-search {
   display: flex;
   flex-direction: column;
-  flex: 1 1 50%;
+  flex: 1 1;
 }
 
 .delete {
