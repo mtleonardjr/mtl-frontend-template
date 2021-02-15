@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -13,6 +14,11 @@ import Footer from './components/Footer'
 import About from './components/About'
 
 function App() {
+  const [showSearch, setShowSearch] = useState(false)
+
+
+
+
   return (
     <Router>
       <div className='app-container'>
