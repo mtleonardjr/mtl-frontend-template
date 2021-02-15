@@ -1,13 +1,22 @@
 * {
   border: 2px solid black;
+  background-color: lightgray;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  border: 2px solid black;
 }
 
 .app {
-  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 200px;
+  align-items: center;
+  flex: 2;
+  border: 2px solid black;
 }
 
 .banner {
@@ -16,12 +25,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: rgb(48, 48, 48);
 }
 
 .main-body {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 1;
 }
 
 .header {
@@ -29,12 +39,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: gray;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  background-color: gray;
 }
 
 .about-container {
@@ -57,32 +69,71 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  flex: 1;
+  flex: 1 1;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  flex: 1 1 300px;
-  min-height: 200px;
+  flex: 1 1 100%;
 }
 
-.column-1 {
+.column-search {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+}
+
+.delete {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 0 10px;
+  background-color: inherit;
+}
+
+.text-input {
+  background-color: white;
+}
+
+.card-search {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
+  padding: 2px 10px;
+  margin: 2px 10px;
+  background-color: gray;
 }
 
-.column-2 {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
+  padding: 2px 10px;
+  margin: 2px 10px;
+  background-color: gray;
+}
+
+.card-records {
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: gray;
+  max-height: 300px;
+  overflow: auto;
+  padding: 2px 10px;
+  margin: 2px 10px;
+}
+
+.card-label {
+  text-align: center;
+  font-size: x-large;
+  background-color: inherit;
 }
 
 .column-item {
-  margin: 10px;
   text-align: center;
 }
 
@@ -92,6 +143,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: gray;
 }
 
 .footer-item {

@@ -15,15 +15,18 @@ import About from './components/About'
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div className='app-container'>
         <Banner />
-        <div className="main-body">
-          <Header />
-          <Navbar />
-          <Switch>
-            <Route exact path='/'><Columns /></Route>
-            <Route path='/about'><About /></Route>
-          </Switch>
+        <div className="app">
+          <div className="main-body">
+            <Header />
+            <Navbar />
+            <Switch>
+              <Route exact path='/'><Columns /></Route>
+              <Route path='/about'><About /></Route>
+            </Switch>
+          </div>
+
         </div>
         <Footer />
       </div>
