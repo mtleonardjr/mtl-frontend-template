@@ -3,12 +3,10 @@ const CollapsedComponent = ({ onAdd }) => {
         <div className="column">
         <div className="card-collapsed">
           <div className='label-collapsed-invs'></div>
-          <label className='label-collapsed'>CollapsedComponent Label</label>
-
+          <label className='label-collapsed'>Collapsed Component Label</label>
           <div className='expand' >
             <button onClick={onAdd}>x</button>
           </div>
-          
         </div>
       </div>
     )
