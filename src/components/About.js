@@ -2,7 +2,7 @@ const About = () => {
     return (
       <div className="about-container">
         <div className="about">
-          About
+          <small>&copy; Copyright 2021, Michael Leonard</small>
         </div>
       </div>
     )
