@@ -2,7 +2,7 @@ const Add = ({ onAdd }) => {
     return (
       <div className="column">
         <form className="card">
-          <div className='card-label2'>
+          <div className='card-label'>
             <div className='label-collapsed-invs'></div>
             <label className='label-collapsed'>Add</label>
             <div className='expand' >

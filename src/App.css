@@ -63,6 +63,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-self: space-around;
 }
 
 .column {
@@ -107,7 +108,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1 0;
+  flex: 2 0;
   padding: 2px 10px;
   margin: 2px 10px;
   background-color: gray;
@@ -122,7 +123,7 @@
   background-color: gray;
 }
 
-.card-label2 {
+.card-label {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -133,16 +134,9 @@
   flex-direction: column;
   justify-content: center;
   background-color: gray;
-  overflow: auto;
-  padding: 2px 10px;
-  margin: 2px 10px;
-  max-height: 300px;
-}
 
-.card-label {
-  text-align: center;
-  font-size: x-large;
-  background-color: inherit;
+  overflow: auto;
+  max-height: 35vh;
 }
 
 .column-item {

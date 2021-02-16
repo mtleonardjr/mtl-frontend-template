@@ -17,7 +17,7 @@ const Columns = () => {
       {showAdd === true && (<Add onAdd={() => setShowAdd(!showAdd)}/>)}
       {showAdd === false && <CollapsedCard onAdd={() => setShowAdd(!showAdd)} title='Add'/>}
 
-      {showRecords === true && (<Add onAdd={() => setShowRecords(!showRecords)}/>)}
+      {showRecords === true && (<Records onAdd={() => setShowRecords(!showRecords)}/>)}
       {showRecords === false && <CollapsedCard onAdd={() => setShowRecords(!showRecords)} title='Records'/>}
     </div>
   )
